@@ -29,13 +29,13 @@ Users should be able to:
 
 #### Desktop Default & Active
 
-![](images/desktop-default.png)
-![](images/desktop-active.png)
+![](images/desktop-default.jpeg)
+![](images/desktop-active.jpeg)
 
 #### Mobile Default & Active
 
-![](images/mobile-default.png)
-![](images/mobile-active.png)
+![](images/mobile-default.jpeg)
+![](images/mobile-active.jpeg)
 
 ### Links
 
