@@ -151,7 +151,8 @@ h2 {
 .tooltiptext {
   display: flex;
   width: 90%;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 0.5rem;
   letter-spacing: 5px;
   font-size: 16px;
 }
