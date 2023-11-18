@@ -25,3 +25,7 @@ document.querySelector(".share-link").addEventListener("click", (event) => {
  event.preventDefault();
  adjustLayout();
 });
+let imgIcon = document.querySelector(".img-icon");
+imgIcon.addEventListener("click", () => {
+ imgIcon.classList.toggle("bg");
+});
