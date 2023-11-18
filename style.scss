@@ -45,6 +45,7 @@ img {
 }
 .profile {
  display: flex;
+ transition: all 0.3 ease-in-out;
 }
 .contact {
  display: flex;
@@ -81,14 +82,19 @@ h2 {
 .share-link {
  position: relative;
  flex: 1;
- @media (min-width: 600px) {
-  background-color: hsl(210, 46%, 95%);
-  border-radius: 50%;
-  padding: 5px 10px;
+ color: white;
+ transition: all 0.15s ease;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+
+ .bi-arrow-90deg-right::before {
+  font-size: 1.5rem;
   color: hsl(214, 17%, 51%);
-  font-size: 1rem;
-  transition: all 0.15s ease;
-  cursor: pointer;
+ }
+ @media (min-width: 600px) {
+  border-radius: 50%;
+  padding: 0 8px;
  }
 }
 .close {
@@ -97,23 +103,36 @@ h2 {
 .active {
  display: flex;
  flex-direction: row-reverse;
+ justify-content: space-around;
+ align-items: center;
  padding: 1rem;
  background-color: hsl(217, 19%, 35%);
+ border-radius: 0 0 0.5rem 0.5rem;
+ color: hsl(214, 17%, 51%);
+
+ a {
+  color: white;
+ }
 }
 .tooltiptext {
  display: flex;
+ width: 90%;
+ justify-content: space-evenly;
+ letter-spacing: 5px;
+ font-size: 14px;
+
  @media (min-width: 600px) {
   width: fit-content;
-  background-color: black;
-  color: #fff;
+  background-color: hsl(217, 19%, 35%);
   text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 10px;
+  gap: 0.5rem;
   position: absolute;
   z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
+  bottom: 130%;
+  left: 5%;
+  margin-left: -80px;
   a {
    padding: 0 5px;
    color: white;
