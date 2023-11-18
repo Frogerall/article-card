@@ -1,0 +1,135 @@
+* {
+ box-sizing: border-box;
+ line-height: 1.5;
+ padding: 0;
+ margin: 0;
+ font-family: "Manrope", sans-serif;
+}
+body {
+ background-color: hsl(210, 46%, 95%);
+}
+.container {
+ display: flex;
+ width: 90%;
+ flex-direction: column;
+ border-radius: 1rem;
+ background-color: white;
+ margin: 3rem 1rem;
+ box-shadow: 3px 3px 10px rgba(110, 110, 110, 0.493);
+ @media (min-width: 600px) {
+  flex-direction: row;
+  max-width: 55%;
+  margin: 10rem auto;
+ }
+}
+.img-wrapper {
+ img {
+  border-radius: 1rem 1rem 0 0;
+  height: 100%;
+  @media (min-width: 600px) {
+   border-radius: 1rem 0 0 1rem;
+  }
+ }
+}
+img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+}
+.img-wrap {
+ width: 3rem;
+ padding-right: 1rem;
+ img {
+  border-radius: 50%;
+ }
+}
+.profile {
+ display: flex;
+}
+.contact {
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ width: 100%;
+}
+h3 {
+ display: flex;
+ flex: 1;
+ flex-direction: column;
+ font-size: 13px;
+ span {
+  color: rgb(109, 109, 109);
+ }
+}
+article {
+ margin: 1.5rem 1.5rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ gap: 1rem;
+}
+p {
+ font-size: 13px;
+ line-height: 1.7;
+ color: hsl(217, 19%, 35%);
+}
+h2 {
+ line-height: 1.2;
+ color: hsl(217, 19%, 35%);
+ font-size: 15px;
+}
+.share-link {
+ position: relative;
+ flex: 1;
+ @media (min-width: 600px) {
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: hsl(214, 17%, 51%);
+  font-size: 1rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+ }
+}
+.close {
+ display: none;
+}
+.active {
+ display: flex;
+ flex-direction: row-reverse;
+ padding: 1rem;
+ background-color: hsl(217, 19%, 35%);
+}
+.tooltiptext {
+ display: flex;
+ @media (min-width: 600px) {
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  a {
+   padding: 0 5px;
+   color: white;
+   text-decoration: none;
+  }
+ }
+}
+.tooltiptext::after {
+ @media (min-width: 600px) {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+ }
+}
