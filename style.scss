@@ -134,9 +134,13 @@ h2 {
  display: flex;
  width: 90%;
  justify-content: flex-start;
+ align-items: center;
  gap: 0.5rem;
  letter-spacing: 5px;
  font-size: 13px;
+ a {
+  font-size: 16px;
+ }
  @media (min-width: 600px) {
   width: fit-content;
   background-color: hsl(217, 19%, 35%);
